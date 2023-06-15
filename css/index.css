@@ -3,10 +3,11 @@
   padding: 0;
   text-transform: uppercase;
 }
-
+/* nav color logo */
 .container {
   background: rgb(220, 212, 212);
 }
+
 .container header {
   letter-spacing: 0.2em;
   font-family: "Tenor Sans", sans-serif;
@@ -15,7 +16,7 @@
   display: flex;
   height: 150px;
 }
-
+/* navc bar menu */
 nav a {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
@@ -31,6 +32,27 @@ nav {
   justify-content: center;
 }
 
+a {
+  position: relative;
+}
+
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  /* display: block; */
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+nav a:hover:after {
+  width: 100%;
+  left: 0;
+}
+/* slider */
 .slider img {
   width: 99vw;
 }
@@ -49,7 +71,6 @@ nav {
   /* top: 50px;
   left: 50px; */
   overflow: hidden;
-
 }
 @keyframes slide {
   0% {
@@ -76,7 +97,4 @@ nav {
   100% {
     transform: translateX(-300%);
   }
-}
-
-.slider {
 }
