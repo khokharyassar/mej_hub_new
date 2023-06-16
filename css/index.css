@@ -3,9 +3,11 @@
   padding: 0;
   text-transform: uppercase;
 }
+
 /* nav color logo */
 .container {
-  background: rgb(220, 212, 212);
+  /* background: rgb(220, 212, 212); */
+  background: linear-gradient(rgb(127, 118, 118), rgb(220, 212, 212));
 }
 
 .container header {
@@ -16,6 +18,7 @@
   display: flex;
   height: 150px;
 }
+
 /* navc bar menu */
 nav a {
   font-family: "Montserrat", sans-serif;
@@ -48,10 +51,12 @@ a:after {
   transition: width 0.5s ease 0s, left 0.5s ease 0s;
   width: 0;
 }
+
 nav a:hover:after {
   width: 100%;
   left: 0;
 }
+
 /* slider */
 .slider img {
   width: 99vw;
@@ -72,10 +77,12 @@ nav a:hover:after {
   left: 50px; */
   overflow: hidden;
 }
+
 @keyframes slide {
   0% {
     transform: translateX(0);
   }
+
   /* 25% {
     transform: translateX(0);
   }
@@ -85,16 +92,24 @@ nav a:hover:after {
   50% {
     transform: translateX(-100%);
   }
+
   /* 55% {
     transform: translateX(-200%);
   } */
   75% {
     transform: translateX(-200%);
   }
+
   /* 80% {
     transform: translateX(-300%);
   } */
   100% {
     transform: translateX(-300%);
   }
+}
+
+/* heading */
+.heading {
+  font-family: "Tenor Sans", sans-serif;
+  text-align: center;
 }
