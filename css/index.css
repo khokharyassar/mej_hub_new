@@ -117,16 +117,21 @@ nav a:hover:after {
 
 .insta {
   display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+.post {
+  margin: 0 8px;
 }
 
-.insta_link p{
+.insta_link p {
   font-family: "Tenor Sans", sans-serif;
   font-size: xx-large;
   text-align: center;
   margin-top: 75px;
   margin-bottom: 50px;
 }
-.insta_link a{
+.insta_link a {
   text-decoration: none;
   color: black;
 }
