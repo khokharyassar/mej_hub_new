@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  font-family: "Tenor Sans", sans-serif;
 }
 
 /* nav color logo */
@@ -120,6 +121,7 @@ nav a:hover:after {
   justify-content: center;
   margin: 15px;
 }
+
 .post {
   margin: 0 8px;
 }
@@ -131,22 +133,71 @@ nav a:hover:after {
   margin-top: 75px;
   margin-bottom: 50px;
 }
+
 .insta_link a {
   text-decoration: none;
   color: black;
 }
+
+/* review section */
+h2 {
+  text-align: center;
+  font-family: "Tenor Sans", sans-serif;
+}
+
+.review-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+textarea, [type="email"] {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form textarea {
+  height: 100px;
+}
+
+form input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(127, 118, 118);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: rgb(153, 143, 143);
+  /* background-color: #45a049; */
+}
+
+/* footer */
 .contact {
   /* font-family: "Montserrat", sans-serif; */
   background: black;
-  color: white;
   letter-spacing: 0.2em;
   margin-top: 90px;
   /* /* padding-bottom: 30px;  */
-  padding-left: 30px;
+  /* padding-left: 30px; */
   /* display: flex; */
   padding: 7.5px 15px;
 }
 
-.contact a {
+.contact ul,
+li a {
   list-style: none;
+  color: white;
+  text-decoration: none;
 }
